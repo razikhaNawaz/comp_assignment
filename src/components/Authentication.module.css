@@ -1,0 +1,78 @@
+.parent {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f08080; /* Add your desired background color here */
+    opacity: 0.8;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Changed to percentage for responsiveness */
+    max-width: 400px; /* Added max-width for larger screens */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .input input {
+    margin-top: 10px; /* Reduced top margin */
+    padding: 10px; /* Reduced padding */
+    width: 100%; /* Full width */
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(206, 192, 192);
+  }
+  
+  .child1 button {
+    margin-top: 15px; /* Reduced top margin */
+    padding: 10px; /* Reduced padding */
+    width: 100%; /* Full width */
+  }
+  
+  .child1 h3 {
+    color: white;
+    text-align: center; /* Center the heading */
+  }
+  
+  .child2 {
+    margin-top: 10px; /* Added margin-top for separation */
+    text-align: center; /* Center the button */
+  }
+  
+  @media (max-width: 768px) {
+    /* Apply these styles for screens up to 768px wide */
+    .container {
+      width: 90%; /* Adjust width for smaller screens */
+    }
+  
+    .input input {
+      margin-top: 5px; /* Further reduced top margin */
+      padding: 8px; /* Further reduced padding */
+    }
+  
+    .child1 button {
+      margin-top: 10px; /* Adjusted margin for smaller screens */
+    }
+  }
+  .logoutButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
